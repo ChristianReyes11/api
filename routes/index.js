@@ -3,7 +3,7 @@ const controllers = require('../controllers');
 
 const router= Router();
 
-router.get('/', (req, res)=> res.send('Buenas tardes XD'));
-router.post('/canciones', controllers.createCancion);
-router.get('/canciones', controllers.getAllSong);
+router.get('/', (req, res)=> res.send('Api de VideJuegos'));
+router.post('/juegos', controllers.createJuego);
+router.get('/juegos', controllers.getJuegos);
 module.exports = router;

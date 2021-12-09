@@ -7,5 +7,5 @@ server.use(cors());
 server.options('*', cors());
 
 server.use(express.json());
-server.use('/ghost-api',routes);
+server.use('/ignaciovl-api',routes);
 module.exports = server;

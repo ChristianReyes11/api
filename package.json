@@ -1,7 +1,7 @@
 {
-  "name": "ghost-api",
+  "name": "ignaciovl-api",
   "version": "1.0.0",
-  "description": "RestApi de Ghost",
+  "description": "RestApi de videojuegos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "api",
     "postgres"
   ],
-  "author": "OdraudeMendezAguirre",
+  "author": "Ignacio Varela Lucho",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",

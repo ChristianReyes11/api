@@ -1,9 +1,9 @@
 const models = require('../database/models');
-const createCancion = async (req,res)=>{
+const createJuego = async (req,res)=>{
     try{
-        const cancion = await models.canciones.create(req.body);
+        const juego = await models.juegos.create(req.body);
         return res.status(201).json({
-            cancion
+            juego
         });
     }catch (error){
         return res.status(500).json({
@@ -12,18 +12,18 @@ const createCancion = async (req,res)=>{
     }
 };
 
-const getAllSong = async (req, res)=>{
-    console.log('Obteniendo Cancion');
+const getJuegos = async (req, res)=>{
+    console.log('Obteniendo Jueguito');
     try{
-        const canciones = await models.canciones.findAll({
+        const juegos = await models.juegos.findAll({
            include:[]
         });
-        return res.status(200).json({canciones});
+        return res.status(200).json({juegos});
     } catch (error){
         return res.status(500).send(error.message);
     }
 };
 module.exports = {
-    createCancion,
-    getAllSong
+    createJuego,
+    getJuegos
 };
