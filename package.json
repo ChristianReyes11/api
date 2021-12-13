@@ -1,7 +1,7 @@
 {
-  "name": "ignaciovl-api",
+  "name": "eduardo-api",
   "version": "1.0.0",
-  "description": "RestApi de videojuegos",
+  "description": "RestApi de FC Barcelona",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "api",
     "postgres"
   ],
-  "author": "Ignacio Varela Lucho",
+  "author": "Christian Eduardo Amaro Reyes",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",

@@ -1,9 +1,9 @@
 const models = require('../database/models');
-const createJuego = async (req,res)=>{
+const createjugadores = async (req,res)=>{
     try{
-        const juego = await models.juegos.create(req.body);
+        const jugador = await models.jugadores.create(req.body);
         return res.status(201).json({
-            juego
+            jugador
         });
     }catch (error){
         return res.status(500).json({
@@ -12,18 +12,18 @@ const createJuego = async (req,res)=>{
     }
 };
 
-const getJuegos = async (req, res)=>{
-    console.log('Obteniendo Jueguito');
+const getjugadores = async (req, res)=>{
+    console.log('Obteniendo Jugadores');
     try{
-        const juegos = await models.juegos.findAll({
+        const jugadores = await models.jugadores.findAll({
            include:[]
         });
-        return res.status(200).json({juegos});
+        return res.status(200).json({jugadores});
     } catch (error){
         return res.status(500).send(error.message);
     }
 };
 module.exports = {
-    createJuego,
-    getJuegos
+    createjugadores,
+    getjugadores
 };

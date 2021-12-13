@@ -7,5 +7,5 @@ server.use(cors());
 server.options('*', cors());
 
 server.use(express.json());
-server.use('/ignaciovl-api',routes);
+server.use('/eduardo-api',routes);
 module.exports = server;
